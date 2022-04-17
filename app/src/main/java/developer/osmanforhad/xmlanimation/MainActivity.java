@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     //Define Variable
     Button Mybtn;
-    Animation ZoomIn;
+    Animation FadeIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,9 +22,9 @@ public class MainActivity extends AppCompatActivity {
         Mybtn = (Button) findViewById(R.id.btnId);
 
         //Connect XML Animation file with this java class
-        ZoomIn = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.zoom_in_animation);
+        FadeIn = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade_in_animation);
 
         //setup animation effect on the button
-        Mybtn.startAnimation(ZoomIn);
+        Mybtn.startAnimation(FadeIn);
     }
 }
